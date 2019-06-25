@@ -19,3 +19,18 @@ class MyViewController : UIViewController {
 }
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
+
+//******************************  varibles and Constants  ***************
+//***********************************************************************
+
+var str = "Hello PLayground"
+
+//let name = "Tim Mcgraw"
+//name = "remeo"
+
+var name = "Time McGraw"
+//var name = "Romeo"
+
+
+
+
