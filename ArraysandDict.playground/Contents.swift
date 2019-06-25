@@ -1,21 +1,60 @@
 //: A UIKit based Playground for presenting user interface
-  
+
 import UIKit
-import PlaygroundSupport
 
-class MyViewController : UIViewController {
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .white
+//Arrays
+var evenNumbers = [2, 4, 6, 8]
+var Songs: [Any] = ["Shake it off ", "You being With me", "Back to december", 3]
 
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
-        self.view = view
-    }
-}
-// Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
+Songs[0]
+Songs[1]
+Songs[2]
+
+type(of: Songs)
+
+//Creating Arrays
+
+var songs: [String]
+Songs[0] = "Shake it Off"
+
+//var songs1: [String] = []
+var songs2 = [String]()
+
+//Array Opwrators
+
+var songs3 = ["Shake it off", "You Belong with me", "Back to december"]
+var songs4 = ["today was a Frirytale", "Welcome to New York", "Fifteen"]
+var both = songs3 + songs4
+
+
+both += ["Everything has Changed"]
+print(both)
+
+
+//Dictionaries
+
+
+//Array sameple
+var person = ["tayor","Swift","December", "taylorswift.com"]
+
+//dict
+
+var  personDict = [ "First": "tylor",
+                    "middle": "Alison",
+                    "last":"Swift",
+                    "Month": "December",
+                    "Website": "TaylorSwift.com"]
+
+personDict["middle"]
+personDict["Month"]
+
+
+
+
+
+
+
+
+
+
+
