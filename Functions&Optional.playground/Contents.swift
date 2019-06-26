@@ -33,3 +33,20 @@ func countLetterInString(string: String){
     print("the string \(string)has \(string.count) letters")
     
 }
+countLetterInString(string: "helloooo00000")
+
+
+func albumIstaylors(name: String) -> Bool{
+    if name == "Taylor Swift" { return true }
+    if name == "Fearless" { return true}
+    return false
+}
+
+if albumIstaylors(name: "Taylor Swift") {
+    print("that's one of hers! ")
+}
+if albumIstaylors(name: "Fearless") {
+    print("who made that?")
+} else{
+    print("who made that?!")
+}
