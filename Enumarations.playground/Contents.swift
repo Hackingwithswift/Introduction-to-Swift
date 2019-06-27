@@ -49,4 +49,28 @@ func getHaterStatus(weather: WeatherType) -> String? {
 getHaterStatus(weather: WeatherType.cloud)
 
 
+//Structs:
+
+struct Person {
+    var clothes: String
+    var shoes: String
+    
+    // Functions inside the Structs
+
+    func describe() {
+        print("I like wearing \(clothes) with \(shoes)")
+    }
+    
+}
+
+let tayor = Person(clothes: "T-shirt", shoes: "nike")
+let other = Person(clothes: "short sk", shoes: "high heals")
+
+print(tayor.clothes)
+print(other.shoes)
+
+var tylorCopy = tayor
+tylorCopy.shoes = "Flip Flops"
+
+
 
