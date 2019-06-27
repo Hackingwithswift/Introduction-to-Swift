@@ -50,3 +50,37 @@ if albumIstaylors(name: "Fearless") {
 } else{
     print("who made that?!")
 }
+
+// Optionals:
+func getHaterStatus(weather: String) -> String? {
+    if weather == "sunny" {
+        return nil
+    } else {
+        return "Hate"
+    }
+}
+
+func takeHaterAction(status: String) {
+    if status == "Hate" {
+        print("Hating")
+    }
+}
+
+if let haterStatus = getHaterStatus(weather: "rainy") {
+    takeHaterAction(status: haterStatus)
+}
+
+//
+
+func position(of string: String, in array: [String]) -> Int {
+    for i in 0 ..< array.count {
+        if array[i] == string {
+            return i
+        }
+    }
+    
+    return 0
+}
+///Force unwrapping optionals
+
+
