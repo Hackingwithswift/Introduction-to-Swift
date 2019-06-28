@@ -19,3 +19,38 @@ class MyViewController : UIViewController {
 }
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
+
+
+//Classes
+
+class Person {
+    var clothes: String
+    var shoes: String
+    
+    init(clothes: String, shoes: String) {
+        self.clothes = clothes
+        self.shoes = shoes
+    }
+}
+
+
+class Singer {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+        
+    }
+    
+    
+    func sing() {
+        print("la la la la")
+    }
+    
+}
+var taylor = Singer(name: "Taylor", age: 25)
+taylor.name
+taylor.age
+taylor.sing()
